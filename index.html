@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DocStream PDF-Cloud — Sistema inteligente de armazenamento, organização e busca de documentos PDF. Renomeação automática, OCR, compressão, sincronização em nuvem e muito mais." />
+  <title>DocStream PDF-Cloud | Gestão Documental Inteligente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">DocStream <span class="logo-accent">PDF-Cloud</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="nav-menu">
+        <a href="#features" class="nav-link">Funcionalidades</a>
+        <a href="#cloud" class="nav-link">Cloud</a>
+        <a href="#benefits" class="nav-link">Benefícios</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <a href="https://wa.me/5577999279128" target="_blank" rel="noopener" class="btn btn--whatsapp navbar__cta">
+        <span class="btn-icon">💬</span> WhatsApp
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">🏆 Tecnologia para gestão documental</div>
+          <h1 class="hero__title">
+            Chega de perder tempo<br />
+            <span class="hero__highlight">procurando documentos</span>
+          </h1>
+          <p class="hero__subtitle">
+            Tem dificuldade para organizar arquivos e enviar prestações de contas ao Tribunal de Contas?
+            O <strong>DocStream PDF-Cloud</strong> vai transformar a gestão dos seus documentos.
+          </p>
+          <div class="hero__actions">
+            <a href="https://wa.me/5577999279128" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+              <span class="btn-icon">💬</span> Falar pelo WhatsApp
+            </a>
+            <a href="#contact" class="btn btn--outline btn--lg">
+              <span class="btn-icon">📩</span> Solicitar Demonstração
+            </a>
+          </div>
+          <div class="hero__trust">
+            <span>✔ Seguro e protegido por senha</span>
+            <span>✔ Busca em segundos</span>
+            <span>✔ Sincronização em nuvem</span>
+          </div>
+        </div>
+        <div class="hero__mockup" aria-hidden="true">
+          <!-- Replace with real screenshot when available -->
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="mockup-title-bar">DocStream PDF-Cloud</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-sidebar">
+                <div class="mockup-item active">📄 Documentos</div>
+                <div class="mockup-item">🔍 Buscar</div>
+                <div class="mockup-item">☁️ Cloud</div>
+                <div class="mockup-item">⚙️ Ferramentas</div>
+              </div>
+              <div class="mockup-main">
+                <div class="mockup-search-bar">🔍 Buscar por nome ou conteúdo...</div>
+                <div class="mockup-file">📄 Contrato_Prestacao_Servicos_2025.pdf</div>
+                <div class="mockup-file">📄 Nota_Fiscal_Fevereiro_2025.pdf</div>
+                <div class="mockup-file active">📄 Relatorio_Tribunal_Contas_2025.pdf</div>
+                <div class="mockup-file">📄 Ata_Reuniao_Marco_2025.pdf</div>
+                <div class="mockup-file">📄 Termo_Aditivo_Contrato_02.pdf</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROBLEM ===================== -->
+    <section class="section section--bg" id="problem">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Você enfrenta esses desafios?</h2>
+          <p class="section-subtitle">Reconhece algum desses problemas no seu dia a dia?</p>
+        </div>
+        <div class="cards-grid cards-grid--3">
+          <div class="card card--problem">
+            <div class="card__icon">⏱️</div>
+            <h3 class="card__title">Horas perdidas buscando arquivos</h3>
+            <p class="card__text">Tempo desperdiçado procurando documentos em pastas desorganizadas ou arquivos com nomes sem padrão.</p>
+          </div>
+          <div class="card card--problem">
+            <div class="card__icon">📂</div>
+            <h3 class="card__title">Dificuldade com o Tribunal de Contas</h3>
+            <p class="card__text">Processo trabalhoso para organizar, nomear e enviar documentos nas prestações de contas exigidas pelos órgãos públicos.</p>
+          </div>
+          <div class="card card--problem">
+            <div class="card__icon">🔓</div>
+            <h3 class="card__title">Falta de controle e segurança</h3>
+            <p class="card__text">Documentos sensíveis sem proteção adequada, sem controle de quem acessa o quê ou histórico de modificações.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUTION INTRO ===================== -->
+    <section class="section section--white" id="solution">
+      <div class="container container--narrow text-center">
+        <div class="section-header">
+          <div class="tag">A solução</div>
+          <h2 class="section-title">Conheça o DocStream PDF-Cloud</h2>
+          <p class="section-subtitle section-subtitle--lg">
+            Um sistema inteligente de armazenamento e organização de arquivos, desenvolvido para trazer
+            <strong>praticidade, segurança e agilidade</strong> para sua rotina.
+            Com o DocStream, você encontra qualquer documento em segundos, através de busca por nome
+            ou até pelo <strong>conteúdo do arquivo</strong>.
+          </p>
+        </div>
+        <div class="solution-stats">
+          <div class="stat">
+            <div class="stat__number">12+</div>
+            <div class="stat__label">Ferramentas de PDF</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">100%</div>
+            <div class="stat__label">Automatizado</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">☁️</div>
+            <div class="stat__label">Sincronização em nuvem</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">🔐</div>
+            <div class="stat__label">Proteção por senha</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section section--bg" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">Funcionalidades</div>
+          <h2 class="section-title">Tudo que você precisa para gerenciar documentos</h2>
+          <p class="section-subtitle">Ferramentas profissionais para processamento e organização de PDFs</p>
+        </div>
+        <div class="cards-grid cards-grid--4">
+
+          <div class="card card--feature">
+            <div class="card__icon">🔍</div>
+            <h3 class="card__title">Extração de texto de PDFs</h3>
+            <p class="card__text">Captura automaticamente o conteúdo textual de qualquer PDF, incluindo documentos escaneados.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">📝</div>
+            <h3 class="card__title">Renomeação automática</h3>
+            <p class="card__text">Renomeia arquivos baseado no próprio conteúdo do documento — sem digitar nada manualmente.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">📦</div>
+            <h3 class="card__title">Processamento em lote</h3>
+            <p class="card__text">Processe centenas de arquivos de uma só vez com um único clique. Economize horas de trabalho.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">🔤</div>
+            <h3 class="card__title">OCR — Reconhecimento de texto</h3>
+            <p class="card__text">Reconhece e extrai texto de documentos escaneados, fotografias e PDFs de imagem.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">✂️</div>
+            <h3 class="card__title">Divisão de PDFs</h3>
+            <p class="card__text">Divide documentos grandes em partes menores por tamanho ou por intervalo de páginas.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">🗜️</div>
+            <h3 class="card__title">Compressão inteligente</h3>
+            <p class="card__text">Reduz o tamanho de arquivos sem perder qualidade legível, facilitando o envio por e-mail ou upload.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">📄</div>
+            <h3 class="card__title">Separação de documentos</h3>
+            <p class="card__text">Separa automaticamente documentos distintos que estão num único arquivo PDF.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">🗑️</div>
+            <h3 class="card__title">Exclusão de páginas</h3>
+            <p class="card__text">Remove páginas específicas de um PDF de forma rápida e não destrutiva.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">📋</div>
+            <h3 class="card__title">Templates automáticos</h3>
+            <p class="card__text">Crie modelos de nomenclatura e aplique-os automaticamente em qualquer lote de documentos.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">🔄</div>
+            <h3 class="card__title">Substituição de textos</h3>
+            <p class="card__text">Substitui palavras ou expressões nos nomes dos arquivos com regras personalizadas.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">🔗</div>
+            <h3 class="card__title">Combinação de arquivos</h3>
+            <p class="card__text">Une múltiplos PDFs em um único documento mantendo a qualidade e a ordem das páginas.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon">📥</div>
+            <h3 class="card__title">Importação e exportação</h3>
+            <p class="card__text">Suporte a PDF, JPG, PNG e outros formatos. Converte imagens em PDF automaticamente.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOUD ===================== -->
+    <section class="section section--dark" id="cloud">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <div class="tag tag--light">Doc Stream Cloud</div>
+          <h2 class="section-title">Segurança e mobilidade na nuvem</h2>
+          <p class="section-subtitle">Seus arquivos sincronizados, seguros e acessíveis de qualquer lugar</p>
+        </div>
+        <div class="cards-grid cards-grid--3">
+
+          <div class="card card--cloud">
+            <div class="card__icon">☁️</div>
+            <h3 class="card__title">Sincronização em nuvem</h3>
+            <p class="card__text">Todos os seus arquivos sincronizados automaticamente. Acesse de qualquer computador com total segurança.</p>
+          </div>
+
+          <div class="card card--cloud">
+            <div class="card__icon">🔐</div>
+            <h3 class="card__title">Proteção por senha</h3>
+            <p class="card__text">Acesso restrito a usuários autenticados com controle completo de permissões por perfil de usuário.</p>
+          </div>
+
+          <div class="card card--cloud">
+            <div class="card__icon">📊</div>
+            <h3 class="card__title">Auditoria completa</h3>
+            <p class="card__text">Registro detalhado de todas as ações realizadas, com histórico de acessos e rastreabilidade total.</p>
+          </div>
+
+          <div class="card card--cloud">
+            <div class="card__icon">🔍</div>
+            <h3 class="card__title">Busca pelo conteúdo</h3>
+            <p class="card__text">Encontre qualquer documento em segundos buscando por nome do arquivo ou pelo texto dentro do PDF.</p>
+          </div>
+
+          <div class="card card--cloud">
+            <div class="card__icon">📋</div>
+            <h3 class="card__title">Histórico de acessos</h3>
+            <p class="card__text">Saiba exatamente quem acessou cada documento, quando e o que foi feito — total transparência e controle.</p>
+          </div>
+
+          <div class="card card--cloud">
+            <div class="card__icon">🚫</div>
+            <h3 class="card__title">Detecção de duplicados</h3>
+            <p class="card__text">Identifica automaticamente arquivos duplicados na nuvem, evitando redundância e economizando espaço.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCREENSHOTS (placeholder) ===================== -->
+    <section class="section section--white" id="demo">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">Sistema em ação</div>
+          <h2 class="section-title">Veja o DocStream funcionando</h2>
+          <p class="section-subtitle">Interface moderna, intuitiva e pensada para o seu dia a dia</p>
+        </div>
+        <!-- Replace these placeholders with real screenshots -->
+        <div class="screenshots-grid">
+          <div class="screenshot-item screenshot-item--main">
+            <div class="screenshot-placeholder">
+              <span class="screenshot-icon">🔍</span>
+              <span class="screenshot-label">Busca de documentos</span>
+              <!-- <img src="assets/screenshot-search.png" alt="Tela de busca de documentos" /> -->
+            </div>
+            <p class="screenshot-caption">Busca inteligente por nome ou conteúdo do arquivo</p>
+          </div>
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder">
+              <span class="screenshot-icon">📝</span>
+              <span class="screenshot-label">Renomeação automática</span>
+              <!-- <img src="assets/screenshot-rename.png" alt="Tela de renomeação automática" /> -->
+            </div>
+            <p class="screenshot-caption">Renomeação baseada no conteúdo do PDF</p>
+          </div>
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder">
+              <span class="screenshot-icon">☁️</span>
+              <span class="screenshot-label">Painel Cloud</span>
+              <!-- <img src="assets/screenshot-cloud.png" alt="Painel de sincronização cloud" /> -->
+            </div>
+            <p class="screenshot-caption">Sincronização e controle na nuvem</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BENEFITS ===================== -->
+    <section class="section section--bg" id="benefits">
+      <div class="container">
+        <div class="benefits-inner">
+          <div class="benefits-text">
+            <div class="tag">Por que digitalizar?</div>
+            <h2 class="section-title">Mais organização, produtividade e segurança</h2>
+            <p class="benefits-intro">
+              O DocStream PDF-Cloud não é apenas um software — é a transformação completa da sua gestão documental.
+            </p>
+            <ul class="benefits-list">
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Digitalização de documentos físicos</strong> em alta qualidade com reconhecimento OCR
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Indexação e organização inteligente</strong> dos arquivos por conteúdo, data e categoria
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Armazenamento digital seguro</strong> com backup automático na nuvem
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Facilidade de busca</strong> e acesso rápido às informações em segundos
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Controle e gerenciamento eletrônico</strong> de documentos com auditoria completa
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Redução de espaço físico</strong> e otimização dos processos internos da sua empresa
+                </div>
+              </li>
+              <li>
+                <span class="benefit-check">✔</span>
+                <div>
+                  <strong>Maior segurança e preservação documental</strong> — nunca mais perca um arquivo importante
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-cta-box">
+            <div class="cta-box">
+              <div class="cta-box__icon">🚀</div>
+              <h3 class="cta-box__title">Pronto para transformar sua gestão documental?</h3>
+              <p class="cta-box__text">Entre em contato agora e veja uma demonstração ao vivo do sistema.</p>
+              <a href="https://wa.me/5577999279128" target="_blank" rel="noopener" class="btn btn--whatsapp btn--full">
+                <span class="btn-icon">💬</span> Falar pelo WhatsApp
+              </a>
+              <a href="#contact" class="btn btn--outline-dark btn--full">
+                <span class="btn-icon">📩</span> Enviar mensagem
+              </a>
+              <div class="cta-box__phone">
+                📞 <strong>(77) 99927-9128</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--white" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">Contato</div>
+          <h2 class="section-title">Fale com a gente</h2>
+          <p class="section-subtitle">Tire suas dúvidas ou solicite uma demonstração gratuita</p>
+        </div>
+        <div class="contact-grid">
+
+          <!-- WhatsApp Card -->
+          <div class="contact-whatsapp">
+            <div class="whatsapp-card">
+              <div class="whatsapp-card__icon">💬</div>
+              <h3 class="whatsapp-card__title">Atendimento rápido pelo WhatsApp</h3>
+              <p class="whatsapp-card__text">
+                Prefere falar diretamente? Clique abaixo e converse com a nossa equipe agora mesmo.
+                Respondemos rapidamente durante o horário comercial.
+              </p>
+              <a href="https://wa.me/5577999279128" target="_blank" rel="noopener" class="btn btn--whatsapp btn--full btn--xl">
+                <span class="btn-icon">💬</span> Iniciar conversa no WhatsApp
+              </a>
+              <div class="whatsapp-card__number">📞 (77) 99927-9128</div>
+              <div class="whatsapp-card__company">Bouncing Ball Development</div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+            >
+              <!-- IMPORTANT: Replace YOUR_FORM_ID with your Formspree form ID.
+                   Register free at https://formspree.io — takes 2 minutes. -->
+              <div class="form-group">
+                <label for="name" class="form-label">Nome completo *</label>
+                <input
+                  type="text" id="name" name="name"
+                  class="form-control" placeholder="Seu nome"
+                  required autocomplete="name"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">E-mail *</label>
+                  <input
+                    type="email" id="email" name="email"
+                    class="form-control" placeholder="seu@email.com"
+                    required autocomplete="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Telefone</label>
+                  <input
+                    type="tel" id="phone" name="phone"
+                    class="form-control" placeholder="(00) 00000-0000"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Assunto</label>
+                <select id="subject" name="subject" class="form-control">
+                  <option value="">Selecione...</option>
+                  <option value="demonstracao">Solicitar demonstração gratuita</option>
+                  <option value="preco">Informações sobre preço</option>
+                  <option value="suporte">Suporte técnico</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensagem *</label>
+                <textarea
+                  id="message" name="message"
+                  class="form-control form-control--textarea"
+                  placeholder="Descreva sua necessidade ou dúvida..."
+                  rows="4" required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full btn--lg" id="submit-btn">
+                <span class="btn-icon">📩</span>
+                <span class="btn-text">Enviar mensagem</span>
+              </button>
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">DocStream <span class="logo-accent">PDF-Cloud</span></span>
+        <p class="footer__tagline">Tecnologia inteligente para gestão documental eficiente.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#hero" class="footer__link">Início</a>
+        <a href="#features" class="footer__link">Funcionalidades</a>
+        <a href="#cloud" class="footer__link">Cloud</a>
+        <a href="#benefits" class="footer__link">Benefícios</a>
+        <a href="#contact" class="footer__link">Contato</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="https://wa.me/5577999279128" target="_blank" rel="noopener" class="footer__whatsapp">
+          💬 (77) 99927-9128
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Bouncing Ball Development — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
