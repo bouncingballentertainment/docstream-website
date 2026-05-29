@@ -434,12 +434,35 @@ ul { list-style: none; }
 /* ---- Screenshots ---- */
 .screenshots-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 20px;
+  gap: 24px;
   align-items: start;
 }
-.screenshot-item--main .screenshot-placeholder { height: 300px; }
+.screenshots-grid--2 {
+  grid-template-columns: 1.4fr 1fr;
+}
 
+/* Real screenshot images */
+.screenshot-real {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  background: var(--darkest);
+  line-height: 0;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.screenshot-real:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+  transform: translateY(-4px);
+}
+.screenshot-real img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+
+/* Placeholder (kept for fallback) */
 .screenshot-placeholder {
   background: linear-gradient(135deg, var(--bg) 0%, var(--bg-light) 100%);
   border: 2px dashed var(--border);
@@ -453,19 +476,15 @@ ul { list-style: none; }
   transition: border-color var(--transition), background var(--transition);
 }
 .screenshot-placeholder:hover { border-color: var(--primary); background: rgba(52,152,219,.05); }
-.screenshot-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: calc(var(--radius-lg) - 2px);
-}
 .screenshot-icon  { font-size: 2.5rem; }
 .screenshot-label { font-size: 0.9rem; color: var(--text-muted); font-weight: 500; }
+
 .screenshot-caption {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-weight: 500;
 }
 
 /* ---- Benefits ---- */
@@ -668,8 +687,7 @@ ul { list-style: none; }
 
   .cards-grid--4 { grid-template-columns: repeat(2, 1fr); }
 
-  .screenshots-grid { grid-template-columns: 1fr 1fr; }
-  .screenshot-item--main { grid-column: 1 / -1; }
+  .screenshots-grid--2 { grid-template-columns: 1fr; }
 
   .benefits-inner { grid-template-columns: 1fr; gap: 40px; }
   .benefits-cta-box { max-width: 480px; }
@@ -721,8 +739,7 @@ ul { list-style: none; }
   .cards-grid--4 { grid-template-columns: 1fr; }
 
   /* Screenshots */
-  .screenshots-grid { grid-template-columns: 1fr; }
-  .screenshot-item--main .screenshot-placeholder { height: 200px; }
+  .screenshots-grid--2 { grid-template-columns: 1fr; }
 
   /* Solution stats */
   .solution-stats { gap: 32px; }
