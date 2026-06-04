@@ -153,6 +153,28 @@ ul { list-style: none; }
 .btn--full { width: 100%; justify-content: center; }
 
 .btn-icon { font-size: 1.1em; }
+.btn-icon--img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.whatsapp-card__icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.footer-wa-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 /* ---- Navbar ---- */
 .navbar {
@@ -275,6 +297,47 @@ ul { list-style: none; }
   gap: 16px;
   font-size: 0.85rem;
   color: rgba(255,255,255,.6);
+}
+
+/* GED Label */
+.hero__ged-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(52,152,219,.22) 0%, rgba(30,95,138,.32) 100%);
+  border: 1px solid rgba(52,152,219,.45);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  animation: ged-pulse 3s ease-in-out infinite;
+}
+@keyframes ged-pulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(52,152,219,.15), inset 0 1px 0 rgba(255,255,255,.06); }
+  50%       { box-shadow: 0 0 36px rgba(52,152,219,.38), inset 0 1px 0 rgba(255,255,255,.06); }
+}
+.hero__ged-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(52,152,219,.7));
+}
+.hero__ged-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.hero__ged-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-lt);
+}
+.hero__ged-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.92);
+  line-height: 1.4;
 }
 
 /* Mockup Window */
@@ -490,6 +553,16 @@ ul { list-style: none; }
   text-align: center;
   margin-top: 12px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.caption-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* ---- Benefits ---- */
