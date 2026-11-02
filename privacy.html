@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Política de Privacidade do TLF Sistema PDF — como dados são coletados, usados e protegidos, em conformidade com a LGPD." />
+  <title>Política de Privacidade | TLF Sistema PDF</title>
+  <link rel="icon" type="image/x-icon" href="assets/ds_ico.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .policy { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; line-height: 1.7; }
+    .policy h1 { margin-bottom: 4px; }
+    .policy .updated { color: #6b7280; font-size: .9rem; margin-bottom: 40px; }
+    .policy h2 { margin-top: 40px; margin-bottom: 12px; font-size: 1.3rem; }
+    .policy p, .policy li { color: #374151; }
+    .policy ul { padding-left: 1.3em; margin: 12px 0; }
+    .policy li { margin-bottom: 8px; }
+    .policy table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .policy th, .policy td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e7eb; font-size: .92rem; }
+    .policy th { color: #111827; }
+  </style>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">TLF Sistema PDF</span>
+      </a>
+      <nav class="navbar__nav">
+        <a href="index.html#contact" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="policy">
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: 1 de novembro de 2026</p>
+
+    <p>Esta política descreve como o TLF Sistema PDF, um produto da TLF Sistema, coleta, usa e protege dados ao ser utilizado. Ela existe para atender à Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e para deixar claro, em linguagem simples, o que acontece com seus dados.</p>
+
+    <h2>O que é coletado</h2>
+    <table>
+      <tr><th>Dado</th><th>Onde fica armazenado</th><th>Finalidade</th></tr>
+      <tr><td>Chave de licença</td><td>Registro do Windows, local</td><td>Verificar se o software está licenciado</td></tr>
+      <tr><td>Senha de acesso ao app</td><td>Registro do Windows, com hash (não reversível), local</td><td>Proteger o acesso ao aplicativo no seu computador</td></tr>
+      <tr><td>Caminhos e metadados de arquivos sincronizados</td><td>Sua própria conta Dropbox + registro de auditoria local</td><td>Sincronização e organização de documentos</td></tr>
+      <tr><td>Cópias dos arquivos do Dropbox</td><td>Pasta de cache local, no seu computador</td><td>Abrir e buscar documentos sem baixá-los de novo</td></tr>
+      <tr><td>Texto extraído por OCR</td><td>Índice de busca local, no seu computador</td><td>Permitir busca dentro dos documentos</td></tr>
+      <tr><td>Registro de desempenho da indexação (<code>index_timing.csv</code>): caminho do arquivo no Dropbox, tamanho e tempos</td><td>Arquivo local, no seu computador</td><td>Medir o desempenho da sincronização; nunca é enviado</td></tr>
+      <tr><td>Registro de erros (<code>errors.log</code>); pode conter nomes de arquivos e pastas (chaves e e-mails são ocultados)</td><td>Arquivo local, no seu computador</td><td>Diagnosticar falhas do programa</td></tr>
+      <tr><td>Ações administrativas (quem fez o quê, quando)</td><td>Registro de auditoria local (JSONL)</td><td>Rastreabilidade em contas com múltiplos usuários</td></tr>
+    </table>
+
+    <p><strong>O conteúdo dos seus documentos nunca é enviado para servidores da TLF Sistema.</strong> Os arquivos permanecem no seu computador e, quando a sincronização é usada, na sua própria conta Dropbox.</p>
+
+    <h2>Sincronização em segundo plano</h2>
+    <p>Depois que você abre o programa pela primeira vez, ele passa a ser iniciado junto com o Windows, em segundo plano. Essa opção vem <strong>ativada por padrão</strong>.</p>
+    <ul>
+      <li><strong>O que acontece:</strong> se o TLF Sistema Cloud (Dropbox) estiver conectado, o programa sincroniza seus documentos do Dropbox e atualiza o índice de busca neste computador, mesmo com o programa fechado. Para isso, baixa cópias dos arquivos para a pasta de cache local e grava o texto extraído (OCR) no índice de busca.</li>
+      <li><strong>Sem janela e sem senha:</strong> esse processo não abre janela e não pede a senha de acesso. Ele apenas sincroniza o Dropbox e grava o índice local; a senha continua protegendo a abertura do programa.</li>
+      <li><strong>Impacto no computador:</strong> usa prioridade baixa de processador e de disco, pausa enquanto o programa está aberto e quando o computador está na bateria, e encerra se o Dropbox estiver desconectado.</li>
+      <li><strong>Onde ficam os dados:</strong> somente no seu computador e na sua própria conta Dropbox. Nada é enviado para servidores da TLF Sistema.</li>
+      <li><strong>Como desativar:</strong> no programa, desmarque <strong>TLF Sistema Cloud &gt; Sincronizar ao iniciar o Windows</strong>. A entrada de inicialização é removida e um processo em segundo plano já em execução encerra em cerca de 30 segundos.</li>
+      <li><strong>Registro:</strong> o aviso exibido no primeiro uso e as vezes em que você ativa ou desativa essa opção ficam no registro de auditoria local.</li>
+    </ul>
+
+    <h2>Exportar diagnóstico</h2>
+    <p>Em <strong>Ajuda &gt; Exportar diagnóstico</strong> o programa cria, somente quando você pede, um arquivo .zip no local que você escolher. Ele contém a versão do programa, as configurações e o registro de erros. Ele <strong>nunca</strong> inclui documentos PDF, senha, chave de licença, acesso ao Dropbox, índice de busca nem registro de auditoria. O arquivo não é enviado automaticamente: você decide se e para quem enviá-lo.</p>
+
+    <h2>Com quem os dados são compartilhados</h2>
+    <ul>
+      <li><strong>Dropbox, Inc.</strong> — quando você ativa a sincronização em nuvem, atua como processador dos seus arquivos, sob os termos da sua própria conta Dropbox.</li>
+      <li><strong>Cloudflare Workers</strong> — recebe apenas a chave de licença para verificação de ativação; não recebe documentos nem conteúdo.</li>
+    </ul>
+    <p>Nenhum dado é vendido ou usado para publicidade.</p>
+
+    <h2>Retenção</h2>
+    <p>O registro de auditoria de ações administrativas é mantido localmente por até 180 dias, após os quais entradas mais antigas são removidas automaticamente. Chaves de licença e senha permanecem enquanto o aplicativo estiver instalado. O registro de desempenho (<code>index_timing.csv</code>) para de crescer ao chegar a 10 MB, o registro de erros tem tamanho limitado (cerca de 2 MB, com uma cópia anterior) e as cópias de arquivos do cache são removidas automaticamente quando passam do limite de espaço configurado. Ao desinstalar o programa, os dados locais do usuário que o desinstala (configurações, cache, índice de busca e registros) são removidos.</p>
+
+    <h2>Seus direitos</h2>
+    <p>Como titular dos dados, você pode solicitar a qualquer momento, pelo canal de contato abaixo:</p>
+    <ul>
+      <li>Confirmação de quais dados são mantidos localmente pelo aplicativo</li>
+      <li>Exclusão da chave de licença, senha, registro de auditoria, cache de arquivos, índice de busca e registros de desempenho e de erros armazenados no seu computador</li>
+      <li>Esclarecimentos sobre esta política</li>
+    </ul>
+
+    <h2>Contato</h2>
+    <p>Dúvidas sobre esta política ou sobre seus dados podem ser enviadas para o suporte da TLF Sistema pelo WhatsApp <a href="https://wa.me/5577999279128" target="_blank" rel="noopener">(77) 99927-9128</a> ou pelo <a href="index.html#contact">formulário de contato</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 TLF Sistema. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
